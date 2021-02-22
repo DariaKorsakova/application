@@ -12,3 +12,24 @@ h1, h2, h3, h4, p {
     max-width: 1110px;
     margin: 0 auto;
 }
+.clients-item{
+    width: 256px;
+    display: inline-block;
+    margin-right: -4px;
+    border-bottom: 2px solid #18191F;
+}
+
+.clients-item h2{
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+.clients-item p{
+    margin-bottom: 24px;
+    font-size:16px ;
+    font-weight: 400;
+}
+
+.ml-30{
+    margin-left: 30px;
+}
