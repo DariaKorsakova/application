@@ -8,24 +8,34 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 
-.container {
-    width: 1440px;
-    margin: 0 auto;
+section{
     background-color: #D5FAFC;
 }
 
+
+.container {
+    width: 1275px;
+    margin: 0 auto;
+}
+
+
 .first {
     display: inline-block;   
-    width: 705px;
-    margin-right: -4px;
+    width: 540px;
+    vertical-align: middle;
     background-color: #2EC5CE;
+    margin-right: -4px;
+    margin-left: -4px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 165px;
 }
 
 .left {
-    margin-top: 246px;
+    margin-top: 214px;
     margin-right: 95px;
-    margin-bottom: 246px;
-    margin-left: 165px;
+    margin-bottom: 214px;
+    margin-left: 0;
     width: 445px;
 }
 .left h2 {
@@ -42,11 +52,9 @@ h1, h2, h3, h4, p {
 .second {
     display: inline-block;   
     width: 570px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-    margin-right: 165px;
-    margin-left: 0;
-    background-color: #FFFFFF;   
+    background-color: #FFFFFF; 
+    vertical-align: middle; 
+    margin-right: -4px;
 }
 
 #Icon{
@@ -55,17 +63,15 @@ h1, h2, h3, h4, p {
     margin-bottom: 26px;
     margin-right: 40px;
 }
-\lady {
-    
-    margin-right: 275px;
-    margin-bottom: 26px;
-}
+
 #lady {
     display: inline-block;
     margin-top: -4px;
     margin-left: 40px;
     margin-bottom: 0;
-    margin-right: 16px;  
+    margin-right: 16px; 
+    vertical-align: middle;
+     
 }
 
 .Jenny {
@@ -75,11 +81,13 @@ h1, h2, h3, h4, p {
     margin-left: -4px;
     margin-bottom: 0;
     margin-right: 275px;
+    vertical-align: middle;
+   
 }
 
 #name {
     font-size: 18px;
-    font-weight: 700;    
+    font-weight: 700; 
 }
 
 #job {
@@ -91,7 +99,7 @@ h1, h2, h3, h4, p {
     font-size: 18px;
     font-weight: 400;
     width: 490px;
-    margin-top: 26px;
+    margin-top: 24px;
     margin-right: 40px;
     margin-bottom: 48px;
     margin-left: 40px;
