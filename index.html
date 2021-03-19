@@ -12,21 +12,26 @@
     <title>Document</title>
 </head>
 <body>
-    <section class="network">
+    <section class="network container-fluid">
         <div class="row no-gutters">
-            <div class="col-5">
+            <div class="col-md-5 col-xs-12 no-gutters">
                  <div class="container-1">
                     <img class="container-1__logo" src="img/logo.svg" alt="logo">
+                    <img id = "squre" src="img/squre.svg" alt="squre">
                      <div class="conteiner-1__inf">
+                        <img id="quote"src="img/“.svg" alt="quote">
                          <p>The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software.</p>
+                         <span>Vincent Obi </span>
+                         <img src="img/green circle.svg" alt="circle">
                          <svg width="34" height="33" viewBox="0 0 34 33" fill="none">
                             <path d="M21 0H33.5V33H0V20.5H21V0Z" fill="white"/>
                             </svg>
                     </div>
+                    <img id ="circle" src="img/red circls.svg" alt="circles">
                  </div>
                  <!-- Контейнер закончился -->
             </div>
-            <div class="col-7">
+            <div class="col-md-7 col-xs-12 no-gutters">
                 <div class="container-2">
                     <div class="container-2__register">
                         <div class="row justify-content-between">
@@ -39,7 +44,7 @@
                                 
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-2 step">
                                 <div class="container-2__right">
                                     <span>Step 01/03</span>
                                 </div>
@@ -47,13 +52,13 @@
                             </div>
                         </div>  
                         <div class="row justify-content-end">
-                            <div class="col-4">
+                            <div class="col-3 info">
                                 <div class="container-2__rightbottom">
                                     <span>Personal Info.</span>
                                 </div>
                             </div>   
                          </div>
-                         <div class="container-2__registerform col-7 offset-md-1">
+                         <div class="container-2__registerform col-7 offset-md-3">
                             <h1>Register Individual Account!</h1>
                             <p>For the purpose of industry regulation, your details are required.</p>
                             <form action="#">
@@ -64,22 +69,27 @@
                                 <input type="email" id="email" placeholder="Enter email address">
                                 <label for="password">Create password *</label>
                                 <input type="password" id="password" placeholder="Enter password">
-                            <div class="container-2__checkbox">
-                                
-                                <input type="checkbox">
-                                <span class="checkmark"></span>
-                                <label class="container-2-checkbox" for="checkbox">I agree to terms & conditions</label>      
+                            <div class="container-2__checkbox">   
+                                <label class="container-2-checkbox">I agree to terms & conditions
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>  
+                                </label>      
                             </div>
                             </form>
                             
                         </div>
-                        <div class="container-2__registerform col-7 offset-md-1">
-                             <button type="button" class="btn btn-primary btn-lg">Register Account</button>
+                        <div class="container-2__buttom col-7 offset-md-3">
+                             <button type="button" id = "register" class="btn btn-primary btn-lg">Register Account</button>
+                             <div class="line">
+                                 <span>Or</span>
+                             </div>
+                             <button type="button" id = "google" class="btn btn-primary btn-lg"> <img src="img/google.svg" alt="googlelogo"> Register with Google</button>
+                             
                         </div>
                      </div>
                 </div>
-                <!-- Контейнер закончился -->
-        </div>
+                  <!-- Контейнер закончился -->
+        </div> 
     </section>
 </body>
 </html>
