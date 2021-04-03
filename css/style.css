@@ -1,14 +1,1521 @@
 body {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Mulish-Bold', 'Mulish-Medium',
+    'Mulish-Light',
+    'Mulish-ExtraLight',sans-serif;
     color: #18191F;
     box-sizing: border-box;
+    background-color:  #ffff;
 }
+
+
+  
 
 h1, h2, h3, h4, p {
     margin: 0;
 }
 
-.container{
-    max-width: 1110px;
+.container-1 {
+    width: 1247px;
+    margin: 0 auto;
+    padding: 70px 0 0 0;
+}
+.header-menu {
+    margin-bottom: 84px;
+}
+.Trafalgal-header {   
+    display: flex;
+    justify-content: space-between;  
+    flex-wrap: wrap;  
+}
+
+
+.Trafalgal-header__logo:hover{
+	cursor: pointer;
+
+}
+.Trafalgal-header__menu {
+    width: 600px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Trafalgal-header__menu a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #1F1534;
+    opacity: 0.5;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.Trafalgal-header__menu{
+    display: flex;
+    list-style: none;
+
+  }
+
+  .Trafalgal-header__menu > li > a{
+    display: block;
+  }
+
+  #btn-menu{
+    display: none;
+  }
+  #btn-menu + label{
+    display: none; 
+    position: relative;
+    color: #fff; 
+    z-index: 1;
+    cursor: pointer;
+  }
+  #btn-menu + label:before{
+    content: '=';  
+    color: #458FF6;
+    display: inline-block;
+    font-size: 22px;
+  }
+  #btn-menu:checked + label:before{
+    content: 'x';
+    color: #1F1534;
+  }
+
+.Trafalgal-header__menu a:hover, 
+.Trafalgal-header__menu a:focus {
+	color: #1F1534;	
+    font-weight: 700;
+    opacity: 1;
+}
+.Trafalgal {
+    position: relative;
+}
+
+#squre {
+    position: absolute;
+    left:0;
+    margin-left: -168px;
+}
+.Trafalgal-healthcare {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Trafalgal-healthcare__inf {
+    height: 337px;
+    width: 445px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+.Trafalgal-healthcare h2 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.Trafalgal-healthcare p {
+    font-size: 21px;
+    font-weight: 200;
+    color: #7D7987;
+    line-height: 32px;
+}
+
+.Trafalgal-healthcare__inf button {
+    background: #458FF6;
+    border-radius: 55px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding: 20px 40px;
+    white-space: nowrap;
+    border: none;
+    cursor: pointer;
+}
+
+
+.Trafalgal-healthcare__inf button:hover,
+.Trafalgal-healthcare__inf button:focus, 
+.Trafalgal-healthcare__inf button:active {
+	box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11) !important;
+	transition: .3s;
+	color:#f0eaea;	
+	background: #458ff6;
+	outline: none;
+}
+
+.container-2  {
+    width: 1120px;
+    margin: 0 auto;
+    padding: 192px 0 0 0;
+    position: relative;
+}
+.services, .articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services h2, .articles h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+#line {
+    width: 56px;
+    height: 2px;
+    background: #000000;
+    border-radius: 5px;
+    margin-bottom: 33px;
+}
+
+.services p {
+    width: 1000px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #7D7987;
+    padding-bottom: 80px;
+    text-align: center;
+    line-height: 30px;
+}
+.types-services, .types-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   
+}
+
+#squre2 {
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+    right: 0;
+    margin-right: -40px;
+    z-index: -1;
+}
+#drop {
+    position: absolute;
+    top: 0;
+    margin-top: 180px;
+    left: 0;
+    margin-left: -240px;
+    z-index: -1;
+}
+
+
+
+.types-services__box {
+    width: 350px;
+    height: 354px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #FFFFFF;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    margin-bottom: 37px;
+}
+.types-services__box:nth-child(1) {
+    padding: 54px 45px 47px 39px;
+}
+
+.types-services__box:nth-child(2) {
+    padding: 62px 52px 47px 37px;
+}
+
+.types-services__box:nth-child(3) {
+    padding: 47px 50px 47px 38px;
+}
+.types-services__box:nth-child(4) {
+    padding: 48px 50px 47px 39px;
+}
+.types-services__box:nth-child(5) {
+    padding: 59px 45px 46px 39px;
+}
+
+.types-services__box:last-child {
+    padding: 42px 50px 75px 38px;
+
+}
+.types-services__box:nth-last-child(-n+3) {
+    margin-bottom: 72px;
+}
+.types-services__box a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.types-services__box p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #7D7987;  
+}
+
+.services__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__button button {
+    font-size: 18px;
+    font-weight: 700;
+    color: #458FF6;
+    padding: 20px 40px;
+    white-space: nowrap;
+    border: 1.4px solid #458FF6;
+    box-sizing: border-box;
+    border-radius: 55px;
+    cursor: pointer;
+    background-color: transparent;
+    margin-bottom: 220px;
+}
+
+.services__button button:hover,
+.services__button button:focus, 
+.services__button button:active {
+	box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.08) !important;
+	transition: .3s;	
+	background: #fbfbfb;
+	outline: none;
+}
+
+.container-3 {
+    width: 1273px;
     margin: 0 auto;
 }
+.leading {
+    margin-bottom: 0;
+}
+
+.second {
+    width: 486px;
+    height: 388px;
+}
+
+#line2 {
+    width: 56px;
+    height: 2px;
+    background: #000000;
+    border-radius: 10px;
+}
+
+.second h2, .third h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.second p, .third p {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+}
+
+.second button, .third button, .articles__button button {
+    font-size: 18px;
+    font-weight: 700;
+    color: #458FF6;
+    padding: 20px 55px;
+    white-space: nowrap;
+    border: 1.4px solid #458FF6;
+    box-sizing: border-box;
+    border-radius: 55px;
+    cursor: pointer;
+    background-color: transparent;
+    
+}
+.articles__button button {
+    padding: 20px 70px;   
+    margin-bottom: 202px;
+}
+
+.second button:hover,
+.second button:focus, 
+.second button:active,
+.third button:hover,
+.third button:focus,
+.third button:active, 
+.articles__button button:hover,
+.articles__button button:focus,
+.articles__button button:active
+{
+    box-shadow: 0px 4px 5px 3px rgba(0, 0, 0, 0.08) !important;
+	transition: .3s;	
+	background: #fbfbfb;
+	outline: none;
+    color: #337fe9;
+}
+
+
+.squre2 {
+    position: relative;
+    margin-bottom: 229px;
+}
+
+.squre2 img {
+    position: absolute;
+    right:0;
+    margin-right: -192px;
+}
+
+.container-4 {
+    width: 1120px;
+    margin: 0 auto;
+    padding-bottom: 266px;
+}
+.third {
+    width: 420px;
+    height: 375px;
+
+}
+
+.third button img {
+    vertical-align: bottom;
+    margin-left: 14px;
+}
+
+.container-5 {
+    width: 1120px;
+    height: 425px;
+    margin: 0 auto;
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 47px;
+}
+#squre3 {
+    position: absolute;
+    top:0;
+    margin-top: -12px;
+    right:0;
+    margin-right: -50px;
+}
+.container-5 h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #FFFFFF;
+    
+}
+.title {
+    height: 75px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#line3 {
+    width: 56px;
+    height: 2px;
+    background: #FFFFFF;
+    border-radius: 6px;
+}
+.card {
+    width: 880px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card p { 
+    width: 420px;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #FFFFFF;
+    ;
+}
+.name {
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.data {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.data h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.data span {
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.name img {
+    border-radius: 100px;
+    box-shadow: 0 0 0 3px #ffff, 0 0 13px  #C4C4C4;
+   }
+
+#squre4 {
+    position: absolute;
+    bottom:0;
+    margin-bottom: 39px;
+    left:0;
+    margin-left: -50px;
+    z-index: -1;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 227px;
+}
+
+.container-6  {
+    width: 1156px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#drop2 {
+    position: absolute;
+    z-index:-1;
+    margin-top: -60px;
+    right: 0;
+    margin-right: -222px;
+}
+
+#squre5 {
+    position: absolute;
+    z-index:-1;
+    margin-top: -45px;
+    left:0;
+    margin-left: -35px;
+}
+#line4 {
+    width: 56px;
+    height: 2px;
+    background: #000000;
+    border-radius: 5px;
+    margin-bottom: 72px;
+}
+.types-articles__box {
+    width: 350px;
+    height: 512px;
+    display: flex;
+    background: #FFFFFF;
+    flex-direction: column;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
+    margin-bottom: 72px;
+}
+.types-articles__box-inf {
+    width: 350px;
+    height: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 21px 55px 35px 33px;
+   
+} 
+.types-articles__box img {
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+#name_of_article {
+    font-size: 21px;
+    font-weight: 700;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 32px;
+}
+
+.types-articles__box-inf p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+    color: #7D7987;
+    
+}
+
+.types-articles__box-inf a {
+    font-size: 17px;
+    font-weight: 600;
+    color: #4089ED;
+    text-decoration: none;    
+}
+.types-articles__box-inf svg {
+    margin-left: 14px;
+}
+.types-articles__box a:hover,
+.types-articles__box a:hover svg path{  
+    fill: #246dd3;
+    color: #246dd3;
+    transition: .3s;
+}
+.articles__button {
+    width: 1156px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-7 {
+    height: 432px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.menu__box {
+    height: 210px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.menu__box a{
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+#title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;    
+}
+
+.links {
+    height: 152px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu__box a:hover {  
+    color: #ece8e8;
+    transition: .3s;
+}
+
+.menu__box p, .menu__box span {
+    width: 391px;
+    line-height: 28px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFFFF;
+   
+}
+
+.menu__box span {
+    font-size: 16px;
+    margin-top: 31px;
+}
+
+#squre6 {
+    position: absolute;
+    bottom:0;
+    left: 0;
+}
+
+#squre7 {
+    position: absolute;
+    top:0;
+    margin-top: -71px;
+    right: 0;
+    margin-right: 91px;
+    z-index: -1;
+}
+
+/* медиа запросы */
+@media screen and (max-width: 1920px) {
+    .container-1 {
+        width: 1247px;
+    }
+    .container-2 {
+        width: 1120px;
+    }
+    .container-3 {
+        width: 1273px;
+    }
+    .squre2 img {
+        margin-right: -160px;
+    }
+    .container-4 {
+        width: 1120px;
+    }
+    
+    .container-6 {
+        width: 1156px;
+    }  
+
+}
+
+@media screen and (max-width: 1440px) {
+    .container-1 {
+        width: 1047px;
+    }
+    .container-2 {
+        width: 1080px;
+    }
+    .container-3 {
+        width: 1200px;
+    }
+    .squre2 img {
+        margin-right: -100px;
+    }
+    .container-4 {
+        width: 1020px;
+    }
+
+    #drop2 {
+        margin-right: -142px;
+    }
+    .container-5 {
+        width: 1000px;
+    }
+    .container-6 {
+        width: 1156px;
+    }  
+}
+
+@media screen and (max-width: 1024px) {
+    .container-1 {
+        width: 800px;
+    }
+    #squre {
+        margin-top: -90px;
+        margin-left: -120px;
+    }
+    .Trafalgal-healthcare__inf {
+        height: 300px;
+        width: 350px;
+    }
+    .Trafalgal-header__menu {
+        width: 600px;
+    }
+    .Trafalgal-header__menu a {
+        font-size: 16px;
+    }
+    .Trafalgal-healthcare__img img{
+        height: 350px;
+        width: 393px;
+    }
+    .Trafalgal-healthcare__inf button {
+        font-size: 14px;
+        padding: 15px 35px;
+    }
+    .container-2 {
+        width: 800px;
+    }
+    .Trafalgal-healthcare h2 {
+        font-size: 28px;
+    }
+    .Trafalgal-healthcare p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .services h2, .articles h2 {
+        font-size: 28px;
+    }
+
+    .services p {
+        width: 700px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    #squre2 {
+        margin-top: -35px;
+    }
+    .container-3 {
+        width: 800px;
+    }
+    .types-services__box {
+        width: 235px;
+        height: 290px;
+    }
+    .types-services__box a {
+        font-size: 15px;
+    }
+    
+    .types-services__box p {
+        font-size: 12px;
+        line-height: 18px;  
+    }
+    .types-services__box:nth-child(2) {
+        padding: 57px 52px 47px 27px;
+    }
+    
+    .types-services__box:nth-child(3) {
+        padding: 40px 50px 47px 38px;
+    }
+    .types-services__box:nth-child(4) {
+        padding: 40px 50px 47px 39px;
+    }
+    .types-services__box:last-child {
+        padding: 33px 50px 75px 20px;
+    
+    }
+    .services__button button {
+        font-size: 14px;
+        padding: 15px 35px;
+    }
+    .second h2, .third h2{
+        font-size: 28px;
+    }
+    
+    .second p, .third p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .second button, .third button, .articles__button button {
+        font-size: 14px;
+        padding: 15px 35px;      
+    }
+    .articles__button button {
+        padding: 15px 55px;   
+    }
+    .squre2 img {
+        margin-right: -80px;
+    }
+    .container-4 {
+        width: 800px;
+    }
+    .container-5 {
+        height: 350px;
+        width: 800px;
+    }
+    .container-5 h2 {
+        font-size: 28px;       
+    }
+    .card {
+        width: 700px;
+    }
+    .card p { 
+        width: 300px;
+        font-size: 15px;
+    }
+    .name {
+        width: 320px;
+    }
+    .data h4 {
+        font-size: 18px;
+    }
+    
+    .data span {
+        font-size: 16px;
+    }
+
+    #drop2 {
+        margin-right: -112px;
+    }
+    .container-6 {
+        width: 800px;
+    }  
+
+    .types-articles__box {
+        width: 250px;
+        height: 412px;
+       
+    }
+    .types-articles__box-inf {
+        width: 250px;
+        height: 290px;  
+        padding: 21px 25px 35px 13px;     
+    } 
+   
+    #name_of_article {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .types-articles__box-inf p {
+        font-size: 12px;
+        line-height: 25px;
+   
+    }
+    
+    .types-articles__box-inf a {
+        font-size: 13px;   
+    }
+    .articles__button {
+        width: 800px;
+    }
+    .container-7{
+        height: 400px;
+    }
+    .menu__box {
+        height: 190px;
+    }
+    
+    .links {
+        height: 130px;
+    }
+    .menu__box a{
+        font-size: 16px;
+    }
+     
+    #title {
+        font-size: 18px;   
+    }
+    
+    .menu__box p, .menu__box span {
+        line-height: 25px;
+        font-size: 16px;   
+    }
+    
+    .menu__box span {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .container-1 {
+        width: 750px;
+    }
+    
+    .Trafalgal-healthcare__inf {
+        width: 300px;
+    } 
+    .container-2 {
+        width: 750px;
+    }
+
+    #squre2 {
+        margin-top: -35px;
+    }
+    .services__button button {
+        margin-bottom: 200px;
+    }
+    .container-3 {
+        width: 750px;
+    }
+    
+    .container-4 {
+        width: 750px;
+    }
+    .container-5 {
+        width: 750px;
+    }
+   
+    .container-6 {
+        width: 765px;
+    }  
+
+    
+    .articles__button {
+        width: 750px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container-1 {
+        width: 700px;
+    }
+    #squre {
+        margin-top: -120px;
+        margin-left: -40px;
+    }
+    .Trafalgal-healthcare__inf {
+        height: 250px;
+        width: 350px;
+    }
+    .Trafalgal-header__menu {
+        width: 500px;
+    }
+    .Trafalgal-header__menu a {
+        font-size: 14px;
+    }
+    .Trafalgal-healthcare__img img{
+        height: 290px;
+        width: 350px;
+    }
+    .Trafalgal-healthcare__inf button {
+        font-size: 14px;
+        padding: 15px 35px;
+    }
+    .container-2 {
+        width: 720px;
+    }
+    .services p {
+        width: 570px;
+    }
+    
+    .container-3 {
+        width: 720px;
+    }
+    .squre2 img {
+        margin-right: -6px;
+    }
+    .container-4 {
+        width: 720px;
+        padding-bottom: 200px;
+    }
+
+    .types-services__box {
+        margin-bottom: 12px;
+    }
+
+    #squre2 {
+        margin-right: -18px;
+    }
+    .container-5 {
+        height: 310px;
+        width: 650px;
+    }
+    
+    .card {
+        width: 620px;
+    }
+    .card p { 
+        width: 300px;
+        font-size: 15px;
+    }
+    .name {
+        width: 300px;
+    }
+    .data h4 {
+        font-size: 18px;
+    }
+    
+    .data span {
+        font-size: 16px;
+    }
+
+    #drop2 {
+        margin-right: -35px;
+    }
+    .container-6 {
+        width: 700px;
+    }  
+
+    .types-articles__box {
+        width: 225px;
+        height: 412px;
+       
+    }
+    .types-articles__box-inf {
+        width: 250px;
+        height: 290px;  
+        padding: 21px 25px 35px 13px;     
+    } 
+   
+    #name_of_article {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .types-articles__box-inf p {
+        font-size: 12px;
+        line-height: 25px;
+   
+    }
+    
+    .types-articles__box-inf a {
+        font-size: 13px;   
+    }
+    .articles__button {
+        width: 700px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #btn-menu + label{
+        display: inline-block;
+        padding-top: 10px;
+    }
+    #btn-menu + label + .Trafalgal-header__menu{
+      display: none;
+    }
+    #btn-menu:checked + label + .Trafalgal-header__menu{
+      display: block;
+    }
+    .Trafalgal-header__menu > li > a{
+        padding: 5px 5px 5px 120px;
+        
+      }
+    .Trafalgal-header__menu > li {
+        width: 300px;
+    }
+    .container-1 {
+        width: 350px;
+    }
+    .Trafalgal-header {
+        width: 370px;
+    }
+    .Trafalgal-header__menu {
+        width: 380px;
+        position: absolute;
+    }
+
+    #squre {
+        margin-top: -125px;
+        margin-left: -45px;
+    }
+    .Trafalgal-healthcare {
+        flex-wrap: wrap;
+    }
+
+    .Trafalgal-healthcare__inf {
+        height: 290px;
+        width: 350px;
+        margin-bottom: 40px;
+    }
+    .Trafalgal-healthcare__inf.third {
+        height: 350px;
+    }
+
+    .Trafalgal-header__menu a {
+        font-size: 16px;
+    }
+
+    .Trafalgal-healthcare__inf button {
+        font-size: 16px;
+        padding: 15px 35px;
+    }
+    
+    .Trafalgal-healthcare h2 {
+        font-size: 30px;
+    }
+    .services h2, .articles h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .services p {
+        width: 350px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    #drop {
+        margin-top: 284px;
+        margin-left: -30px;
+        width: 425px;
+    
+    }
+
+    #squre2 {
+        margin-top: 173px;
+        margin-right: -3px;
+    }
+  
+    .container-2 {
+        width: 390px;
+        padding-top: 100px;
+    }
+    .types-services__box {
+        width: 180px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .types-services__box a {
+        font-size: 15px;
+    }
+    
+    .types-services__box p {
+        font-size: 12px;
+        line-height: 18px;  
+    }
+    .types-services__box:nth-child(1) {
+        padding: 45px 40px 40px 27px;
+    }
+    .types-services__box:nth-child(2) {
+        padding: 45px 30px 40px 27px;
+    }
+    
+    .types-services__box:nth-child(3) {
+        padding: 40px 40px 40px 38px;
+    }
+    .types-services__box:nth-child(4) {
+        padding: 40px 40px 40px 39px;
+        margin-bottom: 10px;
+    }
+    .types-services__box:nth-child(5) {
+        padding: 55px 30px 47px 30px;
+    }
+    .types-services__box:last-child {
+        padding: 33px 40px 75px 20px;
+    
+    }
+    .services__button button {
+        font-size: 14px;
+        padding: 15px 35px;
+        margin-bottom: 100px;
+    }
+    .container-3 {
+        width: 350px;
+
+    }
+    .Trafalgal-healthcare__img img {
+        margin-bottom: 40px;
+        height: 300px;
+        width: 370px;
+    }
+    .second h2, .third h2{
+        font-size: 28px;
+    }
+    
+    .second p, .third p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    
+    .second button, .third button, .articles__button button {
+        font-size: 16px;
+        padding: 15px 35px;      
+    }
+    .third button{
+        margin-bottom: 40px;
+    }
+    .articles__button button {
+        padding: 15px 55px;   
+    }
+    .squre2 img {
+        margin-right: -20px;
+    }
+    .container-4 {
+        width: 350px;
+        padding-bottom: 100px;
+    }
+    .container-5 {
+        height: 560px;
+        width: 380px;
+        overflow-x: hidden;
+    }
+    .container-5 h2 {
+        padding-top: 30px;
+        font-size: 25px;       
+    }
+
+    .title {
+        height: 80px;
+    }
+    .card {
+        width: 350px;
+    }
+
+    .card p { 
+        margin: 15px auto;
+        width: 330px;
+    }
+    .name {
+        width: 290px;
+    }
+    .name img {
+        height: 100px;
+        width: 100px;
+    }
+    .data h4 {
+        font-size: 18px;
+    }
+
+    .nav {
+        width: 390px;
+        margin-bottom: 200px;
+    }
+    
+    .data span {
+        font-size: 16px;
+    }
+    #squre5 {
+        margin-left: -43px;
+    }
+
+    #drop2 {
+        margin-top: 190px;
+        margin-right: -19px;
+        width: 360px;
+    }
+    .container-6 {
+        width: 385px;
+    }  
+
+    .types-articles__box {
+        width: 185px;
+        height: 370px;
+        margin-bottom: 10px;
+       
+    }
+    .types-articles__box-inf {
+        width: 180px;
+        height: 290px;  
+        padding: 21px 25px 25px 13px;     
+    } 
+   
+    #name_of_article {
+        font-size: 16px;
+        line-height: 25px;
+    }
+    
+    .types-articles__box-inf p {
+        font-size: 12px;
+        line-height: 25px;
+   
+    }
+    
+    .types-articles__box-inf a {
+        font-size: 13px;   
+    }
+    .articles__button {
+        margin-top: 40px;
+        width: 350px;
+    }
+    .container-7{
+        height: 400px;
+    }
+    .menu__box {
+        height: 128px;
+        padding-left: 40px;
+    }
+    #squre7 {
+        margin-right: 30px;
+    }
+    #squre6 {
+        margin-left: -70px;
+    }
+   
+    .menu__box.logo {
+        height: 170px;
+
+    }
+    .menu__box a{
+        font-size: 10px;
+    }
+    .links {
+        height: 100px;
+    }
+     
+    #title {
+        font-size: 12px;   
+    }
+    
+    .menu__box p, .menu__box span {
+        width: 365px;
+        line-height: 20px;
+        font-size: 14px;   
+    }
+    
+    .menu__box span {
+        font-size: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 375px){
+    .Trafalgal-header__menu {
+        width: 300px;
+    }
+    #drop {
+        width: 375px;
+    }
+   
+    .Trafalgal-header {
+        width: 338px;
+    }
+    .container-2 {
+        width: 365px;
+        padding-top: 100px;
+    }
+    .types-services__box {
+        width: 180px;
+        height: 300px;
+        margin-bottom: 3px;
+    }
+   
+    .squre2 img {
+        margin-right: 6px;
+    }
+    .Trafalgal-healthcare__img img {
+        height: 290px;
+        width: 355px;
+    }
+    .container-5 {
+        width: 360px;
+    }
+    .container-6 {
+        width: 350px;
+    }
+    .title h2 {
+        font-size: 23px;
+    }
+    #squre5 {
+        margin-left: 0;
+    }
+    .nav {
+        width: 375px;
+    }
+    .nav img{
+        width: 300px;
+    }
+    #drop2 {
+        margin-right: -12px;
+    }
+    .menu__box.logo {
+        width: 320px;
+    }
+    .menu__box.logo p,  .menu__box.logo span {
+        width: 300px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 320px){ 
+    .container-1 {
+        width: 280px;
+
+    }
+    .Trafalgal-header {
+        width: 280px;
+    }
+    .Trafalgal-header__menu > li > a {
+        padding: 5px 5px 5px 85px;
+    }
+    .Trafalgal-header__menu > li {
+        width: 245px;
+    }
+    .Trafalgal-header__menu {
+        width: 280px;
+    }
+    .Trafalgal-healthcare__img img {
+        height: 240px;
+        width: 290px;
+    }
+     
+    .container-2 {
+        width: 320px;
+    }
+    .services p {
+        width: 300px;
+    }
+
+    #drop {
+        margin-top: 334px;
+        width: 320px;
+    }
+    #squre2 {
+        margin-top: 32px;
+        margin-right: 21px;
+    }
+    
+    .types-services__box {
+        margin-bottom: 10px;
+    }
+    .types-services__box:nth-child(5) {
+        margin-bottom: 10px;
+    }
+   .container-3, .container-4 {
+      width: 280px;
+   }
+
+   .Trafalgal-healthcare__inf.second {
+     height: 322px;
+    }
+   .Trafalgal-healthcare__inf.third {
+        height: 398px;
+    }
+
+     .container-5 {
+        width: 300px;
+        height: 460px;
+    }
+    #squre3 {
+        margin-top: -48px;
+    }
+    .container-5 h2 {
+        font-size: 17px;       
+    }
+    .name img {
+        height: 85px;
+        width: 85px;
+    }
+
+    .title {
+        height: 80px;
+        width: 260px;
+    }
+    .card {
+        width: 260px;
+    }
+
+    .card p { 
+        margin: 15px auto;
+        width: 260px;
+    }
+    .name {
+        width: 260px;
+    }
+
+    .nav {
+        width: 320px;
+    }
+    .nav img {
+        width: 270px;
+    }
+    
+    .data span {
+        font-size: 16px;
+    }
+
+    .container-6 {
+        width: 320px;
+    }
+    #squre5 {
+        margin-left: 10px;
+    }
+    #drop2 {
+        margin-right: 0;
+    }
+    .menu__box.logo {
+        width: 320px;
+    }
+    .menu__box.logo p,  .menu__box.logo span {
+        width: 270px;
+    }
+    .articles__button {
+        width: 320px;
+    }
+    #squre6 {
+        margin-left: -72px;
+    }
+    
+    
+}
+
+
