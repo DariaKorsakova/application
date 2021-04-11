@@ -1,0 +1,128 @@
+body
+    background-color: grey
+
+#main p 
+    color: #cccc
+    .redbox
+        color: #ffff
+
+#main
+    width: 1110px
+    p, div
+        font-size: 2en
+        a 
+            font-weight: bold
+
+
+#main
+    width: 1110px
+    &-block
+        font-size: 2en
+        &__subtitle
+            font-weight: bold
+            &__subsub
+                color: blue
+
+/* Привязка к родительскому селектору */
+
+a 
+    font-weight: normal
+    text-decoration: none
+    &:hover
+        text-decoration: underline
+
+    body.firefox &
+        font-weight: normal
+
+#main
+    color: black
+    a
+        font-weight:normal
+        &:hover
+            color: red
+
+/* Вложенные свойства */
+.selector
+    margin:
+        top: 10px
+        bottom: 15px
+        left: 5px
+        right: 14px
+
+/* selector */
+%main-button
+    font-size: 12px
+    font-weight: 500
+    padding:
+        top: 10px
+        bottom: 10px
+        left: 20px
+        right: 20px
+    outline: none
+    border-radius: 4px
+    cursor: pointer
+    border: 1px solid transparent
+
+.first-button
+    background-color: blue
+    color: white
+    @extend %main-button
+    &:hover
+        background: darken(blue, 10%)
+    &:focus
+        background: darken(blue, 20%)     
+
+
+.second-button
+    background: transparent
+    color: black
+    border: 1px solid black
+    @extend %main-button
+
+/* Sassscript */
+$summ: 10 + 20 / 2
+$cn: content
+.selector
+    margin:
+        top: $summ + px
+        bottom: 12px + 8px
+   
+
+
+/* Переменные sass */
+
+$base-size-xs: 2px
+$accent: #ff9910
+
+
+@import "main.css"
+@import "http://ikea.com"
+@import url()
+
+
+/*if()*/
+$let: 5
+.selector
+    @if $let >= 5
+        content: ">"
+    @else if $let < 5
+        content: "<"
+
+/*for*/
+@for $i from 1 to 11
+    .item-#{$i}
+        background-image: url(img/#{$i}.jpg)
+
+/*each*/
+
+@each $name in footer, vertical
+    .section-#($name)
+        background-image: url(img/#{$name}.jpg)
+
+
+/*while*/  
+$i: 7
+@while $i > 0
+    item-#{$i}    
+        width: 1em * $i
+    $i: $i -2 

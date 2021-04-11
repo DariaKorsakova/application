@@ -1,0 +1,111 @@
+@charset "UTF-8";
+body {
+  background-color: grey;
+}
+
+#main p {
+  color: #cccc;
+}
+
+#main p .redbox {
+  color: #ffff;
+}
+
+#main {
+  width: 1110px;
+}
+
+#main p, #main div {
+  font-size: 2en;
+}
+
+#main p a, #main div a {
+  font-weight: bold;
+}
+
+#main {
+  width: 1110px;
+}
+
+#main-block {
+  font-size: 2en;
+}
+
+#main-block__subtitle {
+  font-weight: bold;
+}
+
+#main-block__subtitle__subsub {
+  color: blue;
+}
+
+/* Привязка к родительскому селектору */
+a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body.firefox a {
+  font-weight: normal;
+}
+
+#main {
+  color: black;
+}
+
+#main a:hover {
+  color: red;
+}
+
+/* Вложенные свойства */
+.selector {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 14px;
+}
+
+/* selector */
+.first-button, .second-button {
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.first-button {
+  background-color: blue;
+  color: white;
+}
+
+.first-button:hover {
+  background: #0000cc;
+}
+
+.first-button:focus {
+  background: #000099;
+}
+
+.second-button {
+  background: transparent;
+  color: black;
+  border: 1px solid black;
+}
+
+/* Sassscript */
+.selector {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Переменные sass */
