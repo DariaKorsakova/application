@@ -403,6 +403,10 @@ h1, h2, h3, h4, p {
     justify-content: space-evenly;
     margin-bottom: 47px;
 }
+/* .slider-1, .slider-2 {
+    padding: 64px 118px 79px 118px;
+
+} */
 #squre3 {
     position: absolute;
     top:0;
@@ -431,12 +435,23 @@ h1, h2, h3, h4, p {
     border-radius: 6px;
 }
 .card {
+    padding-top: 70px;
     width: 880px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
+/* .slide-arrow {
+    position: absolute;
+    bottom: 0;
+    z-index:99;
+    width: 29px;
+    height: 20px;
+}
+.slide-arrow.left {
+    backg
+} */
 
 .card p { 
     width: 420px;
@@ -444,8 +459,9 @@ h1, h2, h3, h4, p {
     font-weight: 300;
     line-height: 30px;
     color: #FFFFFF;
-    ;
+
 }
+
 .name {
     width: 350px;
     display: flex;
@@ -661,6 +677,10 @@ h1, h2, h3, h4, p {
     margin-right: 91px;
     z-index: -1;
 }
+
+/* .your-class {
+    width: 100px;
+} */
 
 /* медиа запросы */
 @media screen and (max-width: 1920px) {

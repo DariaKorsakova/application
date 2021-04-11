@@ -1,0 +1,35 @@
+body {
+  background-color: red;
+}
+
+#main p {
+  color: #cccc;
+}
+
+#main p .redbox {
+  color: #ffff;
+}
+
+#main {
+  width: 1110px;
+}
+
+#main p, #main div {
+  font-size: 2en;
+}
+
+#main p a, #main div a {
+  font-weight: bold;
+}
+
+#main {
+  width: 1110px;
+}
+
+#main-block {
+  font-size: 2en;
+}
+
+#main-block__subtitle {
+  font-weight: bold;
+}

@@ -1,0 +1,40 @@
+@complementary-color : spin(#1d36, 
+0)
+
+.container {
+  background-color: rgba(10, 126, 29, 0.4);
+  background-color: rgba(0, 238, 40, 0.4);
+}
+.rule-1 {
+  text-align: right;
+}
+.super-class-name {
+  background-color: rgba(97, 243, 121, 0.4);
+}
+.super-class-name a {
+  text-decoration: none;
+}
+.super-class-name a span {
+  font-size: 14px;
+}
+.super-class-name {
+  background-color: #1d36;
+}
+.super-class-name a {
+  text-decoration: none;
+}
+.super-class-name span {
+  font-size: 14px;
+}
+.super-button-red {
+  color: red;
+}
+.super-button-blue {
+  color: blue;
+}
+.super-button-blue {
+  color: blue;
+}
+.super-button-red {
+  color: red;
+}

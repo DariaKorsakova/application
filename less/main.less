@@ -1,0 +1,56 @@
+// Переменные
+@base-color: #1d36;
+@distance: 0;
+@complementary-color: spin(@base-color, 
+@distance)
+
+.container{
+    background-color: darken(@base-color, 20%);
+
+    background-color: saturate(@base-color, 20%); //Насыщенность
+}
+.rule-1 {
+    @align: right;
+    text-align: @align;
+}
+
+// Вложенные правила
+.super-class-name {
+    background-color: lighten(@base-color, 20%);
+}
+.super-class-name a {
+    text-decoration: none;
+}
+.super-class-name a span{
+    font-size: 14px;
+}
+
+.super-class-name {
+    background-color: @base-color;
+    a {
+        text-decoration: none;
+    }
+   span {
+         font-size: 14px;
+   }
+}
+
+
+.super-button-red {
+    color:red;
+}
+
+.super-button-blue{
+    color:blue;
+}
+
+.super-button{
+    &-blue {
+        color:blue;
+    }
+    &-red {
+        color:red;
+    }
+}
+
+
